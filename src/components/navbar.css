@@ -1,0 +1,72 @@
+:root {
+    --navbar-bg-color: #6f6486;
+    --sidebar-bg-color: #252636;
+    --dk-gray-300: #D1D5DB;
+    --dk-gray-400: #9CA3AF;
+    --dk-gray-500: #6B7280;
+}
+
+/** --------------------------------
+ -- Navbar
+-------------------------------- */
+.navbar {
+    background-color: var(--navbar-bg-color) !important;
+    border: none !important;
+    padding: 0 15px; /* Added padding for better spacing */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between brand and nav items */
+    align-items: center; /* Center items vertically */
+    height: 60px; /* Set a fixed height for the navbar */
+}
+
+.navbar .navbar-brand {
+    color: #FFF !important;
+    font-size: 1.5rem; /* Adjusted font size for branding */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar .navbar-nav {
+    display: flex; /* Flexbox for navigation items */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Push nav items to the right end */
+}
+
+.navbar .nav-item {
+    margin-left: 20px; /* Space between nav items */
+}
+
+.navbar .nav-item.nav-link {
+    color: #EEE !important;
+    padding: 10px 15px; /* Adjusted padding for click area */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.navbar .nav-item.nav-link:hover,
+.navbar .nav-item.nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Background on hover */
+    color: #EEE !important;
+}
+
+.user-info {
+    display: flex; /* Flexbox for user info */
+    align-items: center; /* Center vertically */
+}
+
+.user-name {
+    margin-right: 10px; /* Space between name and avatar */
+    color: #FFF; /* Color for the user name */
+}
+
+.user-avatar {
+    border-radius: 50%; /* Circular avatar */
+}
+
+.show-side-btn {
+    margin-left: 20px; /* Space before the button */
+    background: none; /* Remove default button styles */
+    border: none; /* Remove border */
+    color: #FFF; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.5rem; /* Increase button size */
+}
